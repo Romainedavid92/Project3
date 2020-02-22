@@ -54,6 +54,25 @@ def tableau():
     """Return the homepage."""
     return render_template("tableau.html")
 
+@app.route("/about")
+def about():
+    """Return the homepage."""
+    return render_template("about.html")
+
+@app.route("/analytics")
+def analytics():
+    """Return the homepage."""
+    return render_template("analytics.html")
+
+@app.route("/resources")
+def resources():
+    """Return the homepage."""
+    return render_template("resources.html")
+
+@app.route("/getEnronData")
+def getEnronData():
+    df = pd.read_csv("static/data/email_sentiment.csv")
+    return df[0:500].to_json(orient="records")
 
 if __name__ == '__main__':
     app.run(debug=True)
