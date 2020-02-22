@@ -1,0 +1,32 @@
+.card-body {
+    padding: inherit;
+}
+
+.form-group {
+    margin-right: 1rem;
+    margin-bottom: auto;
+}
+
+select {
+    text-align-last: center;
+}
+
+label {
+    float: left;
+}
+
+.dataTables_length {
+    float: right;
+}
+
+.hover tbody tr:hover {
+    background-color: lightgray;
+}
+
+.hover tr:hover td.sorting_1 {
+    background-color: lightgray;
+}
+
+.list-group {
+    border-width: 400px;
+}
